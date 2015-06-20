@@ -6,7 +6,7 @@ Check network and Bluetooth states and listen for changes.
 public void onCreate(Bundle savedInstanceState) {
 
 		// Check network
-		boolean isIT = new NetworkHelper().checkIT( (Context) {CONTEXT});
+		boolean isIT = new NetworkWatcher().checkIT( (Context) {CONTEXT});
 
 		// Register BluetoothListener
 		BluetoothListener mReceiver = new BluetoothListener(this);
