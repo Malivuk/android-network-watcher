@@ -28,7 +28,7 @@ class NetworkWatcher {
     }
 
 
-    // Enables bluetooth
+    // Enable bluetooth
     public void enableBT() {
 
         BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -55,8 +55,7 @@ class BluetoothListener extends BroadcastReceiver {
             // Send broadcast when BT is ready
             if(state == BluetoothAdapter.STATE_ON) {
 
-                // Restart service
-                parentActivity.handleService();
+                // ...
             }
 
             // Check other states...
