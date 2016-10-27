@@ -1,16 +1,18 @@
 # android-network-watcher
-Check network and Bluetooth states and listen for changes.
+Check network/Bluetooth state and monitor changes.
 
-```
+## Usage
+
+```java
 @Override
 public void onCreate(Bundle savedInstanceState) {
 
-		// Check network
-		boolean isIT = new NetworkWatcher().checkIT( (Context) {CONTEXT});
+	// Check network (wifi/3g)
+	boolean isIT = new NetworkWatcher().checkIT( (Context) <CONTEXT>);
 
-		// Register BluetoothListener
-		BluetoothListener mReceiver = new BluetoothListener(this);
-		registerReceiver(mReceiver, filter);
+	// Register BluetoothListener
+	BluetoothListener mReceiver = new BluetoothListener(this);
+	registerReceiver(mReceiver, filter);
 }
 
 

@@ -28,7 +28,7 @@ class NetworkWatcher {
     }
 
 
-    // Enable bluetooth
+    // Turn bluetooth on
     public void enableBT() {
 
         BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
